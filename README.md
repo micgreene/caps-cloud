@@ -64,7 +64,7 @@ Codefellows 401 JavaScript
 
 #### `.env` requirements (where applicable)
 
-- N/A
+- STORENAME=Frank's-Flowers
 
 #### How to initialize/run your application
  
