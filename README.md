@@ -68,8 +68,9 @@ Codefellows 401 JavaScript
 
 #### How to initialize/run your application
  
-1. node pickup.js to begin creation of pickup messages every second
-2. 
+1. node pickup.js to begin creation of pickup messages every 3 seconds
+2. node driver.js to begin processing of pickup messages and creation of delivered messages
+3. node vendor.js to begin processing of delivered messages
 
 ### Expected Operation
 1. pickup.js will post the “pickup” message
