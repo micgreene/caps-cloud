@@ -83,3 +83,5 @@ Codefellows 401 JavaScript
 5. Waits a random number of seconds
 6. Post a message to the Vendor Queue (using the supplied arn) to alert them of the delivery
 7. Repeat until the queue is empty
+
+![Whiteboard](./CodeChallenge11.jpg)
