@@ -58,7 +58,7 @@ Codefellows 401 JavaScript
 
 ### Setup
 
-1. npm i uuid, sqs-producer, aws-sdk, faker, dotenv
+1. npm i uuid, sqs-producer, sqs-consumer, aws-sdk, faker, dotenv
 2. Ensure you have run 'aws configure' in your terminal
 
 
