@@ -84,4 +84,4 @@ Codefellows 401 JavaScript
 6. Post a message to the Vendor Queue (using the supplied arn) to alert them of the delivery
 7. Repeat until the queue is empty
 
-![Whiteboard](./CodeChallenge11.jpg)
+![Expected Output:](./lab19-screenshot.png)
