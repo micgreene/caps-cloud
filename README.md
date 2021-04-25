@@ -1,4 +1,4 @@
-# Lab 16 - AWS: Events
+# Lab 19 - AWS: Events
 
 Codefellows 401 JavaScript
 
@@ -58,8 +58,8 @@ Codefellows 401 JavaScript
 
 ### Setup
 
-1. Assign the server.js a host server route
-2. Assign a 'username' in client.js and ensure the host being connected to matches the route provided to server.js
+1. npm i uuid, sqs-producer, aws-sdk, faker, dotenv
+2. Ensure you have run 'aws configure' in your terminal
 
 
 #### `.env` requirements (where applicable)
@@ -68,20 +68,18 @@ Codefellows 401 JavaScript
 
 #### How to initialize/run your application
  
-1. npm start to begin local server
-2. use /data and a post to send an object and check for changes at the '/' route
-3. run eb deploy in the terminal to spin up a new eb server and add changes
-4. Ensure to ACP after each change to index.js and the changes will automatically be deployed via the elastic beanstalk workflow in github actions
+1. node pickup.js to begin creation of pickup messages every second
+2. 
 
 ### Expected Operation
 1. pickup.js will post the “pickup” message
-  - The order id and customer name can be randomized
+  - The order id and customer name are randomized
   - The queueArn must be the arn from the Queue you created for the vendor
-2. vendor.js should be an SQS Subscriber
-  - Connect it to the vendor’s queue by using it’s URL/ARN
+2. vendor.js is an SQS Subscriber
+  - Connected to the vendor’s queue by using its URL/ARN
 3. As drivers deliver, this app will continually poll the queue, retrieve them, and log details out to the console
-  - You should be able to disconnect this app, and see deliveries that happened while the app was not running driver.js
-4. Connect to the packages queue and get only the next package
-5. Wait a random number of seconds
+  - You can disconnect this app, and see deliveries that happened while the app was not running driver.js
+4. Connects to the packages queue and gets only the next package
+5. Waits a random number of seconds
 6. Post a message to the Vendor Queue (using the supplied arn) to alert them of the delivery
 7. Repeat until the queue is empty
